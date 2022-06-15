@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: Blenny;
+  src: url('../fonts/blenny.woff');
+}
+
+@layer components {
+  .font-inter {
+    font-family: "Inter", sans-serif;
+  }
+}
+
+@layer base {
+  body {
+    @apply bg-dark text-zinc-100 font-inter
+  }
+}
