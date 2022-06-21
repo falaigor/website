@@ -16,6 +16,10 @@
 }
 
 @layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
     @apply bg-dark text-zinc-100 font-inter
   }
