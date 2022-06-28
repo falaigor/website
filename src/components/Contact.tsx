@@ -2,7 +2,11 @@ import Link from "next/link";
 
 export const Contact = () => {
   return (
-    <section id="contact" className="max-w-6xl m-auto my-24 px-8 xl:px-0">
+    <section
+      data-testid="contact"
+      id="contact"
+      className="max-w-6xl m-auto my-24 px-8 xl:px-0"
+    >
       <h2 className="font-Blenny text-5xl ">Fancy a chat?</h2>
 
       <p className="text-xl max-w-2xl">
