@@ -3,7 +3,7 @@ import { Header } from "./Header";
 
 export const Hero = () => {
   return (
-    <div className="max-w-7xl m-auto">
+    <div data-testid="hero" className="max-w-7xl m-auto">
       <Header />
 
       <div className="mt-14">
