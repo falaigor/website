@@ -1,6 +1,3 @@
-import Image from "next/image";
-import Link from "next/link";
-import { GithubLogo, InstagramLogo, LinkedinLogo } from "phosphor-react";
 import { About } from "../components/About";
 import { Contact } from "../components/Contact";
 import { Experiences } from "../components/Experiences";

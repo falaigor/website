@@ -3,7 +3,6 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        // Inter: ["Inter", "serif"],
         Blenny: ["Blenny", "sans-serif"],
       },
       colors: {

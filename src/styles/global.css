@@ -6,7 +6,7 @@
 
 @font-face {
   font-family: Blenny;
-  src: url('../fonts/blenny.woff');
+  src: url('/fonts/blenny.woff');
 }
 
 @layer components {
