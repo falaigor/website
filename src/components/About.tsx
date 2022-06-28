@@ -55,7 +55,7 @@ export const About = () => {
           <p>
             Comecei a minha jornada profissional por volta do ano de 2015,
             quando trabalhava em um loja de informatica e um amigo disse pro meu
-            chefe "ele sabe fazer sites!" desde então nunca mais parei de fazer
+            chefe ’ele sabe fazer sites!’ desde então nunca mais parei de fazer
             sites (na época era só o carinha do HTML e CSS, mas eu pirava em
             fazer coisas em Flash com AS3 e JavaScript haha).
           </p>

@@ -10,7 +10,7 @@ export const Contact = () => {
       <h2 className="font-Blenny text-5xl ">Fancy a chat?</h2>
 
       <p className="text-xl max-w-2xl">
-        I'd love to connect — let's have a cup of coffee, whether it’s for your
+        I’d love to connect — let’s have a cup of coffee, whether it’s for your
         exciting new project, an upcoming talk or just for fun. Feel free to
         send me an{" "}
         <Link href="/as">
