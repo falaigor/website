@@ -1,5 +1,5 @@
 import { render, screen } from "@testing-library/react";
-import { Experiences } from "./Experiences";
+import { Experiences } from "../Experiences";
 
 describe("Experiences", () => {
   it("should render Experiences component", () => {

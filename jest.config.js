@@ -1,6 +1,6 @@
 module.exports = {
   testPathIgnorePatterns: ["<rootDir>/node_modules/"],
-  setupFilesAfterEnv: ["<rootDir>/src/tests/setupTests.ts"],
+  setupFilesAfterEnv: ["<rootDir>/src/tests_utils/setupTests.ts"],
   testEnvironment: "jsdom",
   collectCoverageFrom: ["<rootDir>/src/**/*.(ts|tsx)"],
   transform: {
@@ -8,7 +8,7 @@ module.exports = {
     "^.+\\.(ts|js|tsx|jsx)$": "@swc/jest",
   },
   moduleNameMapper: {
-    "\\.svg$": "<rootDir>/src/tests/empty-module.js",
-    "\\.png$": "<rootDir>/src/tests/empty-module.js",
+    "\\.svg$": "<rootDir>/src/tests_utils/empty-module.js",
+    "\\.png$": "<rootDir>/src/tests_utils/empty-module.js",
   },
 };
