@@ -2,6 +2,15 @@ import { fireEvent, render, screen } from "@testing-library/react";
 import { Projects } from "../Projects";
 
 describe("Projects", () => {
+  const projects = [
+    {
+      slug: "html-tag-memory-test",
+      title: "HTML Tag Memory Test",
+      excerpt: "Uma descricao bem legal",
+      cover: "https://images.prismic.io/",
+      url: "https://tag-memory-test.vercel.app/",
+    },
+  ];
   it("should render Projects component", () => {
     render(<Projects />);
 
@@ -9,19 +18,19 @@ describe("Projects", () => {
   });
 
   it("should render Project Item", () => {
-    render(<Projects />);
+    render(<Projects {...projects} />);
 
-    expect(screen.getByTestId("project-item")).toBeInTheDocument();
-    expect(screen.getByTestId("project-item-image")).toBeInTheDocument();
-    expect(screen.getByTestId("project-item-title")).toBeInTheDocument();
-    expect(screen.getByTestId("project-item-desc")).toBeInTheDocument();
-    expect(screen.getByTestId("project-item-button")).toBeInTheDocument();
+    expect(screen.getByTestId("item")).toBeInTheDocument();
+    expect(screen.getByTestId("item-image")).toBeInTheDocument();
+    expect(screen.getByTestId("item-title")).toBeInTheDocument();
+    expect(screen.getByTestId("item-desc")).toBeInTheDocument();
+    expect(screen.getByTestId("item-button")).toBeInTheDocument();
   });
 
   it("should redirect to Github when click button", async () => {
-    render(<Projects />);
+    render(<Projects {...projects} />);
 
-    const button = screen.getByTestId("project-item-button");
+    const button = screen.getByTestId("item-button");
     await fireEvent.click(button);
 
     window.location.assign(button.href);
