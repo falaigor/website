@@ -4,6 +4,7 @@ module.exports = {
     extend: {
       fontFamily: {
         Jost: ["Jost", "sans-serif"],
+        JetBrains: ["JetBrains Mono", "monospace"],
       },
       colors: {
         blue: "#0AA7FF",

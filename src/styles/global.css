@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;800&display=swap');
 @font-face {
     font-family: 'Jost';
     src: url('/fonts/jost400book.woff');
@@ -23,20 +22,26 @@
     font-weight: 900;
 }
 
+@font-face {
+    font-family: 'JetBrains Mono';
+    src: url('/fonts/JetBrainsMono-Regular.woff2');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'JetBrains Mono';
+    src: url('/fonts/JetBrainsMono-Bold.woff2');
+    font-weight: 700;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@layer components {
-    .font-inter {
-        font-family: "Inter", sans-serif;
-    }
-}
-
 @layer base {
     html {
         scroll-behavior: smooth;
     }
     body {
-        @apply bg-dark text-zinc-100 font-inter
+        @apply bg-gradient-to-tl from-[#1C2A34] to-[#111A20] text-zinc-100 font-JetBrains
     }
 }
