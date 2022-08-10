@@ -14,7 +14,7 @@ export const Experiences = () => {
         <div className="flex items-center">
           <span
             data-testid="item-number"
-            className="bg-white hover:bg-orange p-2 text-orange hover:text-white text-2xl transition-all font-Blenny w-10 h-10 text-center items-center justify-center flex"
+            className="bg-white hover:bg-blue p-2 text-blue hover:text-white text-2xl transition-all font-Blenny w-10 h-10 text-center items-center justify-center flex"
           >
             1
           </span>

@@ -45,7 +45,7 @@ export const Projects = (projects) => {
                 <a
                   data-testid="item-button"
                   target="_blank"
-                  className="bg-white hover:bg-orange p-2 my-4 text-dark hover:text-white text-2xl transition-all font-Blenny"
+                  className="bg-white hover:bg-blue p-2 my-4 text-dark hover:text-white text-2xl transition-all font-Blenny"
                 >
                   View Project
                 </a>

@@ -15,7 +15,7 @@ export const Footer = () => {
 
         <div className="flex gap-2 mt-4">
           <Link href="https://github.com/falaigor/" target="_blank" passHref>
-            <span className="cursor-pointer bg-dark hover:bg-orange p-2 text-white hover:text-white text-2xl transition-all">
+            <span className="cursor-pointer bg-dark hover:bg-blue p-2 text-white hover:text-white text-2xl transition-all">
               <GithubLogo />
             </span>
           </Link>
@@ -25,7 +25,7 @@ export const Footer = () => {
             href="https://www.instagram.com/falaigors/"
             passHref
           >
-            <span className="cursor-pointer bg-dark hover:bg-orange p-2 text-white hover:text-white text-2xl transition-all">
+            <span className="cursor-pointer bg-dark hover:bg-blue p-2 text-white hover:text-white text-2xl transition-all">
               <InstagramLogo />
             </span>
           </Link>
@@ -35,7 +35,7 @@ export const Footer = () => {
             href="https://www.linkedin.com/in/falaigor/"
             passHref
           >
-            <span className="cursor-pointer bg-dark hover:bg-orange p-2 text-white hover:text-white text-2xl transition-all">
+            <span className="cursor-pointer bg-dark hover:bg-blue p-2 text-white hover:text-white text-2xl transition-all">
               <LinkedinLogo />
             </span>
           </Link>

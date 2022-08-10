@@ -10,7 +10,7 @@ export const About = () => {
     >
       <div className="grid grid-flow-row-dense grid-cols-3">
         <div className="flex flex-col">
-          <h2 className="font-Blenny text-5xl">
+          <h2 className="font-Jost text-5xl">
             About
             <br />
             Igor Santos
@@ -21,7 +21,7 @@ export const About = () => {
               <a
                 data-testid="github-button"
                 target="_blank"
-                className="cursor-pointer bg-white hover:bg-orange p-2 text-dark hover:text-white text-2xl transition-all"
+                className="cursor-pointer bg-white hover:bg-blue p-2 text-dark hover:text-white text-2xl transition-all"
               >
                 <GithubLogo />
               </a>
@@ -31,7 +31,7 @@ export const About = () => {
               <a
                 data-testid="instagram-button"
                 target="_blank"
-                className="cursor-pointer bg-white hover:bg-orange p-2 text-dark hover:text-white text-2xl transition-all"
+                className="cursor-pointer bg-white hover:bg-blue p-2 text-dark hover:text-white text-2xl transition-all"
               >
                 <InstagramLogo />
               </a>
@@ -41,7 +41,7 @@ export const About = () => {
               <a
                 data-testid="linkedin-button"
                 target="_blank"
-                className="cursor-pointer bg-white hover:bg-orange p-2 text-dark hover:text-white text-2xl transition-all"
+                className="cursor-pointer bg-white hover:bg-blue p-2 text-dark hover:text-white text-2xl transition-all"
               >
                 <LinkedinLogo />
               </a>

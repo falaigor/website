@@ -1,26 +1,42 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;800&display=swap');
+@font-face {
+    font-family: 'Jost';
+    src: url('/fonts/jost400book.woff');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Jost';
+    src: url('/fonts/jost500medium.woff');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Jost';
+    src: url('/fonts/jost700bold.woff');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Jost';
+    src: url('/fonts/jost900black.woff');
+    font-weight: 900;
+}
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@font-face {
-  font-family: Blenny;
-  src: url('/fonts/blenny.woff');
-}
-
 @layer components {
-  .font-inter {
-    font-family: "Inter", sans-serif;
-  }
+    .font-inter {
+        font-family: "Inter", sans-serif;
+    }
 }
 
 @layer base {
-  html {
-    scroll-behavior: smooth;
-  }
-
-  body {
-    @apply bg-dark text-zinc-100 font-inter
-  }
+    html {
+        scroll-behavior: smooth;
+    }
+    body {
+        @apply bg-dark text-zinc-100 font-inter
+    }
 }

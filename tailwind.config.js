@@ -3,10 +3,10 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        Blenny: ["Blenny", "sans-serif"],
+        Jost: ["Jost", "sans-serif"],
       },
       colors: {
-        orange: "#E94F36",
+        blue: "#0AA7FF",
         dark: "#181818",
         white: "#F3F1EF",
       },

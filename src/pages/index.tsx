@@ -11,6 +11,7 @@ import { RichText } from "prismic-dom";
 
 import Prismic from "@prismicio/client";
 import { getPrismicClient } from "../services/prismic";
+import { Header } from "../components/Header";
 
 type Project = {
   slug?: string;
@@ -27,6 +28,7 @@ interface ProjectsProps {
 export default function Home({ projects }: ProjectsProps) {
   return (
     <>
+      <Header />
       <Hero />
       <Tricker />
       <About />

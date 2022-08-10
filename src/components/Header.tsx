@@ -3,9 +3,9 @@ import Link from "next/link";
 
 export const Header = () => {
   return (
-    <div
+    <header
       data-testid="header"
-      className="flex justify-between items-center py-8 px-8 xl:px-0"
+      className="flex justify-between items-center max-w-7xl m-auto py-8 px-8 xl:px-0"
     >
       <Image
         data-testid="logo"
@@ -14,33 +14,30 @@ export const Header = () => {
         width="160px"
         height="30px"
       />
+
       <nav className="">
         <ul className="flex">
-          <li className="p-2 text-sm font-semibold">
+          <li className="p-6 text-base font-Jost font-medium">
             <Link data-testid="about-button" href="#about">
-              ABOUT
+              Projects
             </Link>
           </li>
+
           <li
             data-testid="projects-button"
-            className="p-2 text-sm font-semibold"
+            className="p-6 text-base font-Jost font-medium"
           >
-            <Link href="#projects">PROJECTS</Link>
+            <Link href="#projects">About</Link>
           </li>
-          <li
-            data-testid="experiences-button"
-            className="p-2 text-sm font-semibold"
-          >
-            <Link href="#experiences">EXPERIENCES</Link>
-          </li>
+
           <li
             data-testid="contact-button"
-            className="p-2 text-sm font-semibold"
+            className="p-6 text-base font-Jost font-medium"
           >
-            <Link href="#contact">CONTACT</Link>
+            <Link href="#contact">Contact</Link>
           </li>
         </ul>
       </nav>
-    </div>
+    </header>
   );
 };
