@@ -10,6 +10,7 @@ module.exports = {
         blue: "#0AA7FF",
         'light-blue': "#2EE7E7",
         dark: "#181818",
+        'light-dark': '#1C2C35',
         white: "#F3F1EF",
       },
       dropShadow: {

@@ -30,9 +30,8 @@ export default function Home({ projects }: ProjectsProps) {
     <>
       <Header />
       <Hero />
-      <Tricker />
-      <About />
       <Projects {...projects} />
+      <About />
       <Experiences />
       <Contact />
       <Footer />
