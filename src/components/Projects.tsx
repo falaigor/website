@@ -14,7 +14,7 @@ export const Projects = (projects) => {
     <section
       data-testid="projects"
       id="projects"
-      className="max-w-6xl m-auto my-24 px-8 xl:px-0"
+      className="max-w-7xl m-auto my-24 p-6"
     >
       <h2 className="font-Jost font-bold text-3xl mb-10">Projects</h2>
 
@@ -23,7 +23,7 @@ export const Projects = (projects) => {
           <div
             key={v.slug}
             data-testid="item"
-            className="flex flex-col gap-3 px-7 bg-light-dark items-start justify-between border-l-8 border-white rounded-md py-8 my-4"
+            className="flex flex-col gap-3 px-7 bg-light-dark items-start justify-between border-l-8 border-blue rounded-md py-8 my-4"
           >
             <h3
               data-testid="item-title"
