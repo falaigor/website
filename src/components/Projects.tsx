@@ -14,46 +14,51 @@ export const Projects = (projects) => {
     <section
       data-testid="projects"
       id="projects"
-      className="max-w-7xl m-auto my-24 p-6"
+      className="max-w-7xl m-auto my-24 p-6 "
     >
       <h2 className="font-Jost font-bold text-3xl mb-10">Projects</h2>
 
-      {Object.values(projects).map((v: Project) => {
-        return (
-          <div
-            key={v.slug}
-            data-testid="item"
-            className="flex flex-col gap-3 px-7 bg-light-dark items-start justify-between border-l-8 border-blue rounded-md py-8 my-4"
-          >
-            <h3
-              data-testid="item-title"
-              className="font-medium font-Jost text-2xl"
+      <div className="grid grid-cols-2 gap-4">
+        {Object.values(projects).map((p: Project) => {
+          return (
+            <div
+              key={p.slug}
+              data-testid="item"
+              className="flex flex-col px-7 py-8 gap-4 items-start justify-between hover:bg-light-dark border-[1px] border-dark-blue hover:border-l-8 pl-10 hover:pl-[33px] hover:border-l-blue rounded-md cursor-pointer"
             >
-              {v.title}
-            </h3>
+              <div className="flex flex-col gap-4">
+                <h3
+                  data-testid="item-title"
+                  className="font-medium font-Jost text-2xl"
+                >
+                  {p.title}
+                </h3>
 
-            <Image
-              data-testid="item-image"
-              src={v.cover}
-              alt="Logo Igor Santos"
-              width="400px"
-              height="370px"
-            />
+                <div className="max-w-xs">
+                  <img
+                    src={p.cover}
+                    width="100%"
+                    height="auto"
+                    className="rounded-xl"
+                  />
+                </div>
 
-            <p data-testid="item-desc font-Jost">{v.excerpt}</p>
+                <p data-testid="item-desc">{p.excerpt}</p>
+              </div>
 
-            <Link href={v.url} passHref>
-              <a
-                data-testid="item-button"
-                target="_blank"
-                className="py-2 px-6  text-zinc-300 border-2 border-[#7CC9FF41] rounded-lg hover:text-blue text-lg transition-all font-Blenny"
-              >
-                View Project
-              </a>
-            </Link>
-          </div>
-        );
-      })}
+              <Link href={p.url} passHref>
+                <a
+                  data-testid="item-button"
+                  target="_blank"
+                  className="py-2 px-6 text-zinc-300 border-2 border-dark-blue rounded-lg hover:text-zinc-100 hover:bg-dark-blue text-lg transition-all font-Blenny"
+                >
+                  View Project
+                </a>
+              </Link>
+            </div>
+          );
+        })}
+      </div>
     </section>
   );
 };
