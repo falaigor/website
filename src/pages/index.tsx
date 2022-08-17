@@ -1,11 +1,8 @@
 import { GetStaticProps } from "next";
-import { About } from "../components/About";
 import { Contact } from "../components/Contact";
-import { Experiences } from "../components/Experiences";
 import { Footer } from "../components/Footer";
 import { Hero } from "../components/Hero";
 import { Projects } from "../components/Projects";
-import { Tricker } from "../components/Tricker";
 
 import { RichText } from "prismic-dom";
 
@@ -31,7 +28,6 @@ export default function Home({ projects }: ProjectsProps) {
       <Header />
       <Hero />
       <Projects {...projects} />
-      <About />
       <Contact />
       <Footer />
     </>
