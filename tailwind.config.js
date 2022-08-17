@@ -12,6 +12,7 @@ module.exports = {
         'dark-blue': "#7CC9FF41",
         dark: "#181818",
         'light-dark': '#1C2C35',
+        'header': '#1C2A34',
         white: "#F3F1EF",
       },
       dropShadow: {

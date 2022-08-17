@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 export const Hero = () => {
   return (
     <div data-testid="hero" className="max-w-7xl m-auto">
