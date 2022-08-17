@@ -40,6 +40,7 @@ export const Projects = (projects) => {
                     width="100%"
                     height="auto"
                     className="rounded-xl"
+                    data-testid="item-image"
                   />
                 </div>
 

@@ -14,7 +14,5 @@ describe("Header", () => {
     const [about, projects, exp, contact] = screen.getAllByRole("link");
     expect(about).toHaveAttribute("href", "/#about");
     expect(projects).toHaveAttribute("href", "/#projects");
-    expect(exp).toHaveAttribute("href", "/#experiences");
-    expect(contact).toHaveAttribute("href", "/#contact");
   });
 });

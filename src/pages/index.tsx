@@ -32,7 +32,6 @@ export default function Home({ projects }: ProjectsProps) {
       <Hero />
       <Projects {...projects} />
       <About />
-      <Experiences />
       <Contact />
       <Footer />
     </>
