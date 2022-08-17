@@ -3,7 +3,7 @@ import { Chat } from "phosphor-react";
 
 export const Contact = () => {
   return (
-    <section data-testid="contact" id="contact" className="bg-light-dark">
+    <section data-testid="contact" id="contact" className="bg-light-dark p-6">
       <div className="max-w-6xl m-auto py-24 text-center flex flex-col gap-4">
         <h2 className="font-Jost font-bold text-5xl text-blue drop-shadow-custom shadow-red-400/100">
           Fancy a chat?
