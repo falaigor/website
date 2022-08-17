@@ -24,7 +24,7 @@ export const Projects = (projects) => {
             <div
               key={p.slug}
               data-testid="item"
-              className="flex flex-col px-7 py-8 gap-4 items-start justify-between hover:bg-light-dark border-[1px] border-dark-blue hover:border-l-8 pl-10 hover:pl-[33px] hover:border-l-blue rounded-md cursor-pointer"
+              className="flex flex-col px-7 py-8 gap-4 items-start justify-between hover:bg-light-dark border-[1px] border-dark-blue hover:border-l-8 pl-10 hover:pl-[33px] hover:border-l-blue rounded-md transition-colors"
             >
               <div className="flex flex-col gap-4">
                 <h3

@@ -1,13 +1,12 @@
 import { GetStaticProps } from "next";
+import Prismic from "@prismicio/client";
+import { RichText } from "prismic-dom";
+import { getPrismicClient } from "../services/prismic";
+
 import { Contact } from "../components/Contact";
 import { Footer } from "../components/Footer";
 import { Hero } from "../components/Hero";
 import { Projects } from "../components/Projects";
-
-import { RichText } from "prismic-dom";
-
-import Prismic from "@prismicio/client";
-import { getPrismicClient } from "../services/prismic";
 import { Header } from "../components/Header";
 
 type Project = {

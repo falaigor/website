@@ -18,7 +18,7 @@ export const Header = () => {
       <nav className="">
         <ul className="flex">
           <li className="p-6 text-base font-Jost font-medium">
-            <Link data-testid="about-button" href="#about">
+            <Link data-testid="about-button" href="#projects">
               Projects
             </Link>
           </li>
@@ -27,7 +27,7 @@ export const Header = () => {
             data-testid="projects-button"
             className="p-6 text-base font-Jost font-medium"
           >
-            <Link href="#projects">About</Link>
+            <Link href="/about">About</Link>
           </li>
 
           <li
