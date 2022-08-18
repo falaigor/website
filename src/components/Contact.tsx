@@ -6,12 +6,12 @@ export const Contact = () => {
     <section data-testid="contact" id="contact" className="bg-light-dark p-6">
       <div className="max-w-6xl m-auto py-24 text-center flex flex-col gap-4">
         <h2 className="font-Jost font-bold text-5xl text-blue drop-shadow-custom shadow-red-400/100">
-          Fancy a chat?
+          Bora bater um papo?
         </h2>
 
         <p className="text-lg max-w-2xl m-auto">
-          Let’s have a conversation! I’d love to hear about what you’re working
-          on and find a way to work together.
+          Vamos conversar! Eu adoraria ouvir sobre o que você está trabalhando e
+          encontrar uma maneira de trabalhar em conjunto.
         </p>
 
         <Link href="https://www.linkedin.com/in/falaigor/" passHref>

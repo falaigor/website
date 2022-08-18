@@ -16,7 +16,7 @@ export const Projects = (projects) => {
       id="projects"
       className="max-w-7xl m-auto my-24 p-6"
     >
-      <h2 className="font-Jost font-bold text-3xl mb-10">Projects</h2>
+      <h2 className="font-Jost font-bold text-3xl mb-10">Projetos</h2>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         {Object.values(projects).map((p: Project) => {

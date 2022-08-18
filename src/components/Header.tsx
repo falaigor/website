@@ -6,9 +6,9 @@ import Link from "next/link";
 
 export const Header = () => {
   const navigation = [
-    { name: "Projects", href: "/#projects" },
-    { name: "About", href: "/about" },
-    { name: "Contact", href: "/#contact" },
+    { name: "Projetos", href: "/#projects" },
+    { name: "Sobre", href: "/about" },
+    { name: "Contato", href: "/#contact" },
   ];
 
   return (
@@ -22,14 +22,16 @@ export const Header = () => {
             <div className="relative flex max-w-7xl m-auto py-8 px-8 xl:px-0">
               <div className="flex w-full items-center justify-between">
                 <div className="flex-shrink-0 flex items-center">
-                  <Image
-                    data-testid="logo"
-                    src="/logo-white.svg"
-                    alt="Logo Igor Santos"
-                    width="160px"
-                    height="30px"
-                    className="cursor-pointer"
-                  />
+                  <Link data-testid="project-button" href="/">
+                    <Image
+                      data-testid="logo"
+                      src="/logo-white.svg"
+                      alt="Logo Igor Santos"
+                      width="160px"
+                      height="30px"
+                      className="cursor-pointer"
+                    />
+                  </Link>
                 </div>
 
                 <div className="hidden sm:block sm:ml-6">

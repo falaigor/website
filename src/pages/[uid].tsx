@@ -19,7 +19,7 @@ export default function Page({ page }: PageProps) {
   return (
     <>
       <Header />
-      <div data-testid="hero" className="max-w-3xl m-auto">
+      <div data-testid="hero" className="max-w-4xl m-auto">
         <div className="flex flex-col p-6 mb-12 gap-5">
           <h1 className="text-5xl font-Jost font-bold text-zinc-300 drop-shadow-custom shadow-red-400/100">
             {page.title}
