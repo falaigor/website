@@ -5,7 +5,7 @@ import { GithubLogo, InstagramLogo, LinkedinLogo } from "phosphor-react";
 export const Footer = () => {
   return (
     <footer data-testid="footer" className="p-8 flex">
-      <div className="flex max-w-7xl w-full m-auto justify-between items-center py-8 px-8 xl:px-0">
+      <div className="flex flex-col sm:flex-row max-w-7xl w-full m-auto justify-between items-center py-8 px-8 xl:px-0">
         <Image
           src="/logo-white.svg"
           alt="Logo Igor Santos"
@@ -13,7 +13,7 @@ export const Footer = () => {
           height="30px"
         />
 
-        <div className="flex gap-2 mt-4">
+        <div className="flex py-4 gap-2 mt-4">
           <Link href="https://github.com/falaigor/" passHref>
             <a
               target="_blank"
