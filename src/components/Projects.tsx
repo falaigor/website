@@ -18,7 +18,7 @@ export const Projects = (projects) => {
     >
       <h2 className="font-Jost font-bold text-3xl mb-10">Projetos</h2>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 py-4">
         {Object.values(projects).map((p: Project) => {
           return (
             <div
@@ -29,12 +29,12 @@ export const Projects = (projects) => {
               <div className="flex flex-col gap-4">
                 <h3
                   data-testid="item-title"
-                  className="font-medium font-Jost text-2xl"
+                  className="font-medium font-Jost text-2xl py-1"
                 >
                   {p.title}
                 </h3>
 
-                <div className="max-w-xs">
+                <div className="max-w-xs py-1">
                   <img
                     src={p.cover}
                     width="100%"
@@ -44,7 +44,9 @@ export const Projects = (projects) => {
                   />
                 </div>
 
-                <p data-testid="item-desc">{p.excerpt}</p>
+                <p data-testid="item-desc" className="py-1">
+                  {p.excerpt}
+                </p>
               </div>
 
               <Link href={p.url} passHref>

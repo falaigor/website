@@ -29,7 +29,7 @@ export default function Page({ page }: PageProps) {
             field={page.excerpt}
             components={{
               paragraph: ({ children }) => (
-                <p className="text-base text-zinc-300">{children}</p>
+                <p className="text-base py-1 text-zinc-300">{children}</p>
               ),
             }}
           />
