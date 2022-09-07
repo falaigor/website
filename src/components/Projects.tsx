@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 type Project = {
@@ -34,10 +35,11 @@ export function Projects(projects: Project[]) {
                 </h3>
 
                 <div className="max-w-xs max-h-xs h-full py-4">
-                  <img
+                  <Image
                     src={p.cover}
-                    width="100%"
-                    height="auto"
+                    width={300}
+                    height={200}
+                    alt={p.title}
                     className="rounded-xl object-cover h-52"
                     data-testid="item-image"
                   />
