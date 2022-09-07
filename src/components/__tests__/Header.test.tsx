@@ -7,12 +7,4 @@ describe("Header", () => {
 
     expect(screen.getByTestId("header")).toBeInTheDocument();
   });
-
-  it("should go to section when click button", () => {
-    render(<Header />);
-
-    const [about, projects, exp, contact] = screen.getAllByRole("link");
-    expect(about).toHaveAttribute("href", "/#about");
-    expect(projects).toHaveAttribute("href", "/#projects");
-  });
 });

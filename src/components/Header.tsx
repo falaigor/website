@@ -4,7 +4,7 @@ import { X, List } from "phosphor-react";
 import Image from "next/image";
 import Link from "next/link";
 
-export const Header = () => {
+export function Header() {
   const navigation = [
     { name: "Projetos", href: "/#projects" },
     { name: "Sobre", href: "/about" },
@@ -81,4 +81,4 @@ export const Header = () => {
       </Disclosure>
     </header>
   );
-};
+}

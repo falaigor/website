@@ -1,4 +1,4 @@
-export const Hero = () => {
+export function Hero() {
   return (
     <div data-testid="hero" className="max-w-7xl m-auto">
       <div className="flex flex-col mt-14 p-6 gap-5 max-w-4xl">
@@ -11,4 +11,4 @@ export const Hero = () => {
       </div>
     </div>
   );
-};
+}

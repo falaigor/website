@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { GithubLogo, InstagramLogo, LinkedinLogo } from "phosphor-react";
 
-export const Footer = () => {
+export function Footer() {
   return (
     <footer data-testid="footer" className="p-8 flex">
       <div className="flex flex-col sm:flex-row max-w-7xl w-full m-auto justify-between items-center py-8 px-8 xl:px-0">
@@ -52,4 +52,4 @@ export const Footer = () => {
       </div>
     </footer>
   );
-};
+}

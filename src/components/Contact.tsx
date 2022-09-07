@@ -1,15 +1,15 @@
 import Link from "next/link";
 import { Chat } from "phosphor-react";
 
-export const Contact = () => {
+export function Contact() {
   return (
     <section data-testid="contact" id="contact" className="bg-light-dark p-6">
-      <div className="max-w-6xl m-auto py-24 text-center flex flex-col gap-4">
+      <div className="max-w-6xl m-auto py-24 text-center flex flex-col">
         <h2 className="font-Jost font-bold text-5xl text-blue drop-shadow-custom shadow-red-400/100">
           Bora bater um papo?
         </h2>
 
-        <p className="text-lg max-w-2xl m-auto">
+        <p className="text-lg max-w-2xl m-auto py-4">
           Vamos conversar! Eu adoraria ouvir sobre o que você está trabalhando e
           encontrar uma maneira de trabalhar em conjunto.
         </p>
@@ -26,4 +26,4 @@ export const Contact = () => {
       </div>
     </section>
   );
-};
+}

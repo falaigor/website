@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 
 type Project = {
@@ -9,7 +8,7 @@ type Project = {
   url?: string;
 };
 
-export const Projects = (projects) => {
+export function Projects(projects: Project[]) {
   return (
     <section
       data-testid="projects"
@@ -24,27 +23,27 @@ export const Projects = (projects) => {
             <div
               key={p.slug}
               data-testid="item"
-              className="flex flex-col px-7 py-8 gap-4 items-start justify-between hover:bg-light-dark border-[1px] border-dark-blue hover:border-l-8 pl-10 hover:pl-[33px] hover:border-l-blue rounded-md transition-colors"
+              className="flex flex-col px-7 py-8 items-start justify-between hover:bg-light-dark border-[1px] border-dark-blue hover:border-l-8 pl-10 hover:pl-[33px] hover:border-l-blue rounded-md transition-colors"
             >
-              <div className="flex flex-col gap-4">
+              <div className="flex flex-col py-4">
                 <h3
                   data-testid="item-title"
-                  className="font-medium font-Jost text-2xl py-1"
+                  className="font-medium font-Jost text-2xl py-4"
                 >
                   {p.title}
                 </h3>
 
-                <div className="max-w-xs py-1">
+                <div className="max-w-xs max-h-xs h-full py-4">
                   <img
                     src={p.cover}
                     width="100%"
                     height="auto"
-                    className="rounded-xl"
+                    className="rounded-xl object-cover h-52"
                     data-testid="item-image"
                   />
                 </div>
 
-                <p data-testid="item-desc" className="py-1">
+                <p data-testid="item-desc" className="py-4">
                   {p.excerpt}
                 </p>
               </div>
@@ -55,7 +54,7 @@ export const Projects = (projects) => {
                   target="_blank"
                   className="py-2 px-6 text-zinc-300 border-2 border-dark-blue rounded-lg hover:text-zinc-100 hover:bg-dark-blue text-lg transition-all font-Blenny"
                 >
-                  View Project
+                  Ver Projeto
                 </a>
               </Link>
             </div>
@@ -64,4 +63,4 @@ export const Projects = (projects) => {
       </div>
     </section>
   );
-};
+}
