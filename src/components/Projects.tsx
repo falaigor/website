@@ -34,14 +34,12 @@ export function Projects(projects: Project[]) {
                   {p.title}
                 </h3>
 
-                <div className="max-w-xs max-h-xs h-full py-4">
-                  <Image
+                <div className="max-h-xs h-full w-full py-4">
+                  <img
                     src={p.cover}
-                    width={300}
-                    height={200}
-                    alt={p.title}
-                    className="rounded-xl object-cover h-52"
-                    data-testid="item-image"
+                    alt=""
+                    width="100%"
+                    className="rounded-xl object-cover h-96"
                   />
                 </div>
 
