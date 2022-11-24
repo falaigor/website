@@ -2,6 +2,7 @@ import { GetStaticProps } from "next";
 import Prismic from "@prismicio/client";
 import { RichText } from "prismic-dom";
 import { getPrismicClient } from "../services/prismic";
+import Head from "next/head";
 
 import { Contact } from "../components/Contact";
 import { Footer } from "../components/Footer";
@@ -24,6 +25,10 @@ interface ProjectsProps {
 export default function Home({ projects }: ProjectsProps) {
   return (
     <>
+      <Head>
+        <title>Igor Santos | Desenvolvedor FullStack</title>
+      </Head>
+
       <Header />
       <Hero />
       <Projects {...projects} />

@@ -6,6 +6,7 @@ import { getPrismicClient } from "../services/prismic";
 import { Footer } from "../components/Footer";
 import { Header } from "../components/Header";
 import { Contact } from "../components/Contact";
+import Head from "next/head";
 
 type PageProps = {
   page: {
@@ -18,6 +19,10 @@ type PageProps = {
 export default function Page({ page }: PageProps) {
   return (
     <>
+      <Head>
+        <title>Igor Santos | Sobre Mim</title>
+      </Head>
+
       <Header />
       <div data-testid="hero" className="max-w-4xl m-auto">
         <div className="flex flex-col p-6 mb-12 gap-5">

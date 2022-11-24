@@ -5,7 +5,7 @@ export function Contact() {
   return (
     <section data-testid="contact" id="contact" className="bg-light-dark p-6">
       <div className="max-w-6xl m-auto py-24 text-center flex flex-col">
-        <h2 className="font-Jost font-bold text-5xl text-blue drop-shadow-custom shadow-red-400/100">
+        <h2 className="font-Miligram font-bold text-5xl text-blue drop-shadow-custom shadow-red-400/100">
           Bora bater um papo?
         </h2>
 
