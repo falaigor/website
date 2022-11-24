@@ -1,47 +1,53 @@
 @font-face {
-    font-family: 'Jost';
-    src: url('/fonts/jost400book.woff');
-    font-weight: 400;
+  font-family: "Miligram";
+  src: url("/fonts/miligram.woff");
+  font-weight: 800;
 }
 
 @font-face {
-    font-family: 'Jost';
-    src: url('/fonts/jost500medium.woff');
-    font-weight: 500;
+  font-family: "Jost";
+  src: url("/fonts/jost400book.woff");
+  font-weight: 400;
 }
 
 @font-face {
-    font-family: 'Jost';
-    src: url('/fonts/jost700bold.woff');
-    font-weight: 700;
+  font-family: "Jost";
+  src: url("/fonts/jost500medium.woff");
+  font-weight: 500;
 }
 
 @font-face {
-    font-family: 'Jost';
-    src: url('/fonts/jost900black.woff');
-    font-weight: 900;
+  font-family: "Jost";
+  src: url("/fonts/jost700bold.woff");
+  font-weight: 700;
 }
 
 @font-face {
-    font-family: 'JetBrains Mono';
-    src: url('/fonts/JetBrainsMono-Regular.woff2');
-    font-weight: 400;
+  font-family: "Jost";
+  src: url("/fonts/jost900black.woff");
+  font-weight: 900;
 }
 
 @font-face {
-    font-family: 'JetBrains Mono';
-    src: url('/fonts/JetBrainsMono-Bold.woff2');
-    font-weight: 700;
+  font-family: "JetBrains Mono";
+  src: url("/fonts/JetBrainsMono-Regular.woff2");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "JetBrains Mono";
+  src: url("/fonts/JetBrainsMono-Bold.woff2");
+  font-weight: 700;
 }
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 @layer base {
-    html {
-        scroll-behavior: smooth;
-    }
-    body {
-        @apply bg-gradient-to-tl from-[#1C2A34] to-[#111A20] text-zinc-100 font-JetBrains
-    }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-gradient-to-tl from-[#1C2A34] to-[#111A20] text-zinc-100 font-JetBrains;
+  }
 }
