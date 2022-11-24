@@ -14,12 +14,13 @@ export function Header() {
   return (
     <header
       data-testid="header"
-      className="sticky top-0 z-10 bg-gradient-to-tl from-[#141D23] to-[#111A20]"
+      className="sticky top-0 z-10 
+      bg-[#141D23]rounded-md bg-clip-padding backdrop-filter backdrop-blur-3xl bg-opacity-100 border border-gray-800"
     >
       <Disclosure as="nav">
         {({ open }) => (
           <>
-            <div className="relative flex max-w-7xl m-auto py-8 px-8 xl:px-0">
+            <div className="relative flex max-w-7xl m-auto xl:px-0">
               <div className="flex w-full items-center justify-between">
                 <div className="flex-shrink-0 flex items-center">
                   <Link data-testid="project-button" href="/">
