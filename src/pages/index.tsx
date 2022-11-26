@@ -24,8 +24,6 @@ export default function Home({ projects }: ProjectsProps) {
 
       <Hero />
       <Projects {...projects} />
-      <Contact />
-      <Footer />
     </>
   );
 }
