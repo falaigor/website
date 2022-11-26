@@ -1,8 +1,8 @@
+import Head from "next/head";
 import { GetStaticProps } from "next";
 import Prismic from "@prismicio/client";
 import { RichText } from "prismic-dom";
 import { getPrismicClient } from "../services/prismic";
-import Head from "next/head";
 
 import { HeroProjects } from "../components/Projects/Hero";
 import { ProjectProps } from "../components/Home/Projects";

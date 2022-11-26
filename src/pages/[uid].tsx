@@ -1,12 +1,8 @@
+import Head from "next/head";
 import { GetStaticPaths, GetStaticProps } from "next";
 import { RichText } from "prismic-dom";
 import { PrismicRichText } from "@prismicio/react";
 import { getPrismicClient } from "../services/prismic";
-
-import { Footer } from "../components/Footer";
-import { Header } from "../components/Header";
-import { Contact } from "../components/Contact";
-import Head from "next/head";
 
 type PageProps = {
   page: {

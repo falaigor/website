@@ -2,7 +2,6 @@ import { Disclosure } from "@headlessui/react";
 import { X, List } from "phosphor-react";
 
 import Link from "next/link";
-import Image from "next/legacy/image";
 
 export function Header() {
   const navigation = [
