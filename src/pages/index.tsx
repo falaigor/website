@@ -5,10 +5,11 @@ import { getPrismicClient } from "../services/prismic";
 import Head from "next/head";
 
 import { Hero } from "../components/Home/Hero";
-import { ProjectProps, Projects } from "../components/Home/Projects";
+import { Projects } from "../components/Home/Projects";
+import { ProjectType } from "../types/Project";
 
 interface ProjectsProps {
-  projects: ProjectProps[];
+  projects: ProjectType[];
 }
 
 export default function Home({ projects }: ProjectsProps) {

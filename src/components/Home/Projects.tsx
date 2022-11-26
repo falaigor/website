@@ -1,15 +1,7 @@
 import Link from "next/link";
+import { ProjectType } from "../../types/Project";
 
-export type ProjectProps = {
-  slug?: string;
-  title?: string;
-  excerpt?: string;
-  cover?: string;
-  url?: string;
-  highlight?: boolean;
-};
-
-export function Projects(projects: ProjectProps[]) {
+export function Projects(projects: ProjectType[]) {
   return (
     <section
       data-testid="projects"
@@ -19,7 +11,7 @@ export function Projects(projects: ProjectProps[]) {
       <h2 className="font-Jost font-bold text-3xl mb-10">Projetos</h2>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 py-4">
-        {Object.values(projects).map((p: ProjectProps) => {
+        {Object.values(projects).map((p: ProjectType) => {
           return (
             <div
               key={p.slug}

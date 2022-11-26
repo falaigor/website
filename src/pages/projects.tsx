@@ -5,11 +5,11 @@ import { RichText } from "prismic-dom";
 import { getPrismicClient } from "../services/prismic";
 
 import { HeroProjects } from "../components/Projects/Hero";
-import { ProjectProps } from "../components/Home/Projects";
 import { ProjectItem } from "../components/Projects/ProjectItem";
+import { ProjectType } from "../types/Project";
 
 interface ProjectsProps {
-  projects: ProjectProps[];
+  projects: ProjectType[];
 }
 
 export default function Home({ projects }: ProjectsProps) {

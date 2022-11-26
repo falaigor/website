@@ -1,7 +1,7 @@
 import Link from "next/link";
-import { ProjectProps } from "../Home/Projects";
+import { ProjectType } from "../../types/Project";
 
-export function ProjectItem(project: ProjectProps) {
+export function ProjectItem(project: ProjectType) {
   return (
     <div
       data-testid="item"
