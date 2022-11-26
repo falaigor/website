@@ -4,11 +4,9 @@ import { RichText } from "prismic-dom";
 import { getPrismicClient } from "../services/prismic";
 import Head from "next/head";
 
-import { Contact } from "../components/Contact";
-import { Footer } from "../components/Footer";
-import { Hero } from "../components/Home/Hero";
-import { ProjectProps, Projects } from "../components/Home/Projects";
-import { Header } from "../components/Header";
+import { HeroProjects } from "../components/Projects/Hero";
+import { ProjectProps } from "../components/Home/Projects";
+import { ProjectItem } from "../components/Projects/ProjectItem";
 
 interface ProjectsProps {
   projects: ProjectProps[];
@@ -21,8 +19,18 @@ export default function Home({ projects }: ProjectsProps) {
         <title>Igor Santos | Desenvolvedor FullStack</title>
       </Head>
 
-      <Hero />
-      <Projects {...projects} />
+      <HeroProjects />
+
+      <section
+        data-testid="projects"
+        id="projects"
+        className="max-w-7xl m-auto my-24 p-6"
+      >
+        <h2 className="font-Jost font-bold text-3xl mb-10">Projetos</h2>
+        {projects.map((project) => (
+          <ProjectItem key={project.slug} {...project} />
+        ))}
+      </section>
     </>
   );
 }
@@ -38,21 +46,17 @@ export const getStaticProps: GetStaticProps = async () => {
     }
   );
 
-  const projects = response.results
-    .filter((project) => project.data?.highlight)
-    .map((project) => {
-      return {
-        slug: project.uid,
-        title: RichText.asText(project.data.title),
-        excerpt:
-          project.data.description.find(
-            (content) => content.type === "paragraph"
-          )?.text ?? "",
-        highlight: project.data.highlight,
-        cover: project.data.img.url,
-        url: project.data.url,
-      };
-    });
+  const projects = response.results.map((project) => {
+    return {
+      slug: project.uid,
+      title: RichText.asText(project.data.title),
+      excerpt:
+        project.data.description.find((content) => content.type === "paragraph")
+          ?.text ?? "",
+      cover: project.data.img.url,
+      url: project.data.url,
+    };
+  });
 
   return {
     props: {
