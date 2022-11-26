@@ -19,7 +19,7 @@ export function Header() {
       <Disclosure as="nav">
         {({ open }) => (
           <>
-            <div className="relative flex max-w-7xl m-auto xl:px-0">
+            <div className="relative flex max-w-7xl m-auto h-20 px-10 xl:px-0">
               <div className="flex w-full items-center justify-between">
                 <div className="flex-shrink-0 flex items-center">
                   <Link data-testid="project-button" href="/">
