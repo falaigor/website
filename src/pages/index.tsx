@@ -50,18 +50,21 @@ export const getStaticProps: GetStaticProps = async () => {
     }
   );
 
-  const projects = response.results.map((project) => {
-    return {
-      slug: project.uid,
-      title: RichText.asText(project.data.title),
-      excerpt:
-        project.data.description.find((content) => content.type === "paragraph")
-          ?.text ?? "",
-      highlight: project.data.highlight,
-      cover: project.data.img.url,
-      url: project.data.url,
-    };
-  });
+  const projects = response.results
+    .filter((project) => project.data?.highlight)
+    .map((project) => {
+      return {
+        slug: project.uid,
+        title: RichText.asText(project.data.title),
+        excerpt:
+          project.data.description.find(
+            (content) => content.type === "paragraph"
+          )?.text ?? "",
+        highlight: project.data.highlight,
+        cover: project.data.img.url,
+        url: project.data.url,
+      };
+    });
 
   return {
     props: {
