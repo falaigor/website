@@ -9,6 +9,7 @@ describe("Projects", () => {
       excerpt: "Uma descricao bem legal",
       cover: "https://images.prismic.io/",
       url: "https://tag-memory-test.vercel.app/",
+      highlight: true,
     },
   ];
   it("should render Projects component", () => {

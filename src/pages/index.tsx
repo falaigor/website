@@ -6,9 +6,10 @@ import Head from "next/head";
 
 import { Contact } from "../components/Contact";
 import { Footer } from "../components/Footer";
-import { Hero } from "../components/Hero";
-import { ProjectProps, Projects } from "../components/Projects";
 import { Header } from "../components/Header";
+
+import { Hero } from "../components/Home/Hero";
+import { ProjectProps, Projects } from "../components/Home/Projects";
 
 interface ProjectsProps {
   projects: ProjectProps[];

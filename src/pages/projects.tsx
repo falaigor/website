@@ -6,8 +6,8 @@ import Head from "next/head";
 
 import { Contact } from "../components/Contact";
 import { Footer } from "../components/Footer";
-import { Hero } from "../components/Hero";
-import { ProjectProps, Projects } from "../components/Projects";
+import { Hero } from "../components/Home/Hero";
+import { ProjectProps, Projects } from "../components/Home/Projects";
 import { Header } from "../components/Header";
 
 interface ProjectsProps {
