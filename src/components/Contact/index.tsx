@@ -14,14 +14,14 @@ export function Contact() {
           encontrar uma maneira de trabalhar em conjunto.
         </p>
 
-        <Link href="https://www.linkedin.com/in/falaigor/" passHref>
-          <a
-            data-testid="chat-button"
-            target="_blank"
-            className="w-32 m-auto flex justify-between items-center py-2 px-6 text-zinc-300 border-2 border-dark-blue rounded-lg hover:text-zinc-100 hover:bg-dark-blue text-lg transition-all"
-          >
-            <Chat size={24} /> Chat
-          </a>
+        <Link
+          href="https://www.linkedin.com/in/falaigor/"
+          passHref
+          data-testid="chat-button"
+          target="_blank"
+          className="w-32 m-auto flex justify-between items-center py-2 px-6 text-zinc-300 border-2 border-dark-blue rounded-lg hover:text-zinc-100 hover:bg-dark-blue text-lg transition-all"
+        >
+          <Chat size={24} /> Chat
         </Link>
       </div>
     </section>

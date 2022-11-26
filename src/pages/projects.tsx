@@ -21,7 +21,6 @@ export default function Home({ projects }: ProjectsProps) {
         <title>Igor Santos | Desenvolvedor FullStack</title>
       </Head>
 
-      <Header />
       <Hero />
       <Projects {...projects} />
       <Contact />

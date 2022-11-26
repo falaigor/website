@@ -52,14 +52,14 @@ export function Projects(projects: ProjectProps[]) {
                 </p>
               </div>
 
-              <Link href={p.url} passHref>
-                <a
-                  data-testid="item-button"
-                  target="_blank"
-                  className="py-2 px-6 text-zinc-300 border-2 border-dark-blue rounded-lg hover:text-zinc-100 hover:bg-dark-blue text-lg transition-all font-Blenny"
-                >
-                  Ver projeto
-                </a>
+              <Link
+                href={p.url}
+                passHref
+                data-testid="item-button"
+                target="_blank"
+                className="py-2 px-6 text-zinc-300 border-2 border-dark-blue rounded-lg hover:text-zinc-100 hover:bg-dark-blue text-lg transition-all font-Blenny"
+              >
+                Ver projeto
               </Link>
             </div>
           );
@@ -67,13 +67,12 @@ export function Projects(projects: ProjectProps[]) {
       </div>
 
       <div className="flex justify-center items-center">
-        <Link href="/projects">
-          <a
-            data-testid="item-button"
-            className="py-4 px-8 mt-6 text-zinc-300 border-2 border-blue rounded-lg hover:text-zinc-100 hover:bg-dark-blue text-lg transition-all font-Blenny"
-          >
-            Ver todos os projeto
-          </a>
+        <Link
+          href="/projects"
+          data-testid="item-button"
+          className="py-4 px-8 mt-6 text-zinc-300 border-2 border-blue rounded-lg hover:text-zinc-100 hover:bg-dark-blue text-lg transition-all font-Blenny"
+        >
+          Ver todos os projeto
         </Link>
       </div>
     </section>

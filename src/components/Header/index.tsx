@@ -1,8 +1,8 @@
 import { Disclosure } from "@headlessui/react";
 import { X, List } from "phosphor-react";
 
-import Image from "next/image";
 import Link from "next/link";
+import Image from "next/legacy/image";
 
 export function Header() {
   const navigation = [
@@ -24,7 +24,7 @@ export function Header() {
               <div className="flex w-full items-center justify-between">
                 <div className="flex-shrink-0 flex items-center">
                   <Link data-testid="project-button" href="/">
-                    <Image
+                    <img
                       data-testid="logo"
                       src="/logo-white.svg"
                       alt="Logo Igor Santos"
