@@ -15,6 +15,9 @@ module.exports = {
                 "light-dark": "#1C2C35",
                 header: "#1C2A34",
                 white: "#F3F1EF",
+                green: "#81F59B",
+                purple: "#DA82F9",
+                red: "#D9534D",
             },
             dropShadow: {
                 custom: "0 0 76px rgba(188, 251, 195, 0.30)",

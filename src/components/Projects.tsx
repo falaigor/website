@@ -1,15 +1,15 @@
-import Image from "next/image";
 import Link from "next/link";
 
-type Project = {
+export type ProjectProps = {
   slug?: string;
   title?: string;
   excerpt?: string;
   cover?: string;
   url?: string;
+  highlight?: boolean;
 };
 
-export function Projects(projects: Project[]) {
+export function Projects(projects: ProjectProps[]) {
   return (
     <section
       data-testid="projects"
@@ -19,12 +19,16 @@ export function Projects(projects: Project[]) {
       <h2 className="font-Jost font-bold text-3xl mb-10">Projetos</h2>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 py-4">
-        {Object.values(projects).map((p: Project) => {
+        {Object.values(projects).map((p: ProjectProps) => {
           return (
             <div
               key={p.slug}
               data-testid="item"
-              className="flex flex-col px-7 py-8 items-start justify-between hover:bg-light-dark border-[1px] border-dark-blue hover:border-l-8 pl-10 hover:pl-[33px] hover:border-l-blue rounded-md transition-colors"
+              className="flex flex-col px-7 py-8 items-start 
+              justify-between hover:bg-light-dark 
+              border-[1px] border-dark-blue 
+              border-l-8 pl-10 border-l-blue 
+              rounded-md transition-colors"
             >
               <div className="flex flex-col py-4">
                 <h3
@@ -54,12 +58,23 @@ export function Projects(projects: Project[]) {
                   target="_blank"
                   className="py-2 px-6 text-zinc-300 border-2 border-dark-blue rounded-lg hover:text-zinc-100 hover:bg-dark-blue text-lg transition-all font-Blenny"
                 >
-                  Ver Projeto
+                  Ver projeto
                 </a>
               </Link>
             </div>
           );
         })}
+      </div>
+
+      <div className="flex justify-center items-center">
+        <Link href="/projects">
+          <a
+            data-testid="item-button"
+            className="py-4 px-8 mt-6 text-zinc-300 border-2 border-blue rounded-lg hover:text-zinc-100 hover:bg-dark-blue text-lg transition-all font-Blenny"
+          >
+            Ver todos os projeto
+          </a>
+        </Link>
       </div>
     </section>
   );
