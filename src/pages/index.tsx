@@ -16,6 +16,7 @@ type Project = {
   excerpt?: string;
   cover?: string;
   url?: string;
+  highlight?: boolean;
 };
 
 interface ProjectsProps {
@@ -56,6 +57,7 @@ export const getStaticProps: GetStaticProps = async () => {
       excerpt:
         project.data.description.find((content) => content.type === "paragraph")
           ?.text ?? "",
+      highlight: project.data.highlight,
       cover: project.data.img.url,
       url: project.data.url,
     };
