@@ -46,6 +46,19 @@ export function Header() {
                         </Link>
                       </li>
                     ))}
+
+                    {/* <div className="flex items-center">
+                      <li className="p-2 rounded-l-lg bg-[#0dacfd36] text-base font-Jost font-medium hover:text-light-blue transition-all">
+                        <Link data-testid="project-button" href="/">
+                          PT
+                        </Link>
+                      </li>
+                      <li className="p-2 rounded-r-lg bg-[#0dacfd14] text-base font-Jost font-medium hover:text-light-blue transition-all">
+                        <Link data-testid="project-button" href="/">
+                          EN
+                        </Link>
+                      </li>
+                    </div> */}
                   </ul>
                 </div>
               </div>
@@ -74,6 +87,23 @@ export function Header() {
                     {item.name}
                   </Disclosure.Button>
                 ))}
+
+                <div>
+                  <Disclosure.Button
+                    as="a"
+                    href="/"
+                    className="text-gray-300 font-Jost text-lg hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md "
+                  >
+                    PT
+                  </Disclosure.Button>
+                  <Disclosure.Button
+                    as="a"
+                    href="/"
+                    className="text-gray-300 font-Jost text-lg hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md "
+                  >
+                    EN
+                  </Disclosure.Button>
+                </div>
               </div>
             </Disclosure.Panel>
           </>
